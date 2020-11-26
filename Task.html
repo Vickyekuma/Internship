@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/css/bootstrap.css">
+    <title>Task 1</title>
+</head>
+<body>
+
+    <style>
+        .form-group{
+            position:relative;
+            width: 500px;
+            background-color: rgb(170, 236, 173);
+            left: 400px;
+            padding: 40px;
+            margin: 6px;
+            align-content: center;
+            height: 600px;
+        }
+        
+        .label{
+            color: rgb(1, 12, 22);
+            font-weight: 500;
+        }
+     
+
+        ul.nav{
+            list-style-type: none;
+            margin: 0;
+            overflow: hidden;
+            background-color:rgb(170, 236, 173) ;
+            padding: 0;
+            position:sticky;
+            position:-webkit-sticky;
+            top: 0;
+            
+        }
+
+        ul.nav li{
+            float: left;
+        }
+        ul.nav li a:not(.logo) {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: larger;
+            position: relative;
+            left: 200px;
+        } 
+
+       
+        ul.nav li a:hover:not(.active):not(.logo) {
+            background-color: yellowgreen;
+        }
+        
+        
+        ul.nav li a.active {
+            background-color: green;
+            color: ivory;
+        }
+
+        ul.nav li.right {
+            position: relative;
+            float: right;
+        }
+
+        ul.nav li a.logo {
+            color: hotpink;
+            font-size:xx-large;
+            font-weight: 500;
+
+        }
+        @media screen and (max-width: 600px) {
+            ul.nav li.right,
+            ul.nav li {float: none;}
+            
+        }
+
+
+        body{
+            margin: 0;
+        }
+
+        
+ 
+
+
+    </style>
+
+    
+        <head>
+            <link rel="icon" type="image/png" href="">
+            <ul class="nav">
+               
+                <li><a Class="logo">Ossy</a></li>
+                <li><a Class="active" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="right"><a href="tel:+2347060442266">Contact us</a></li>
+            
+            </ul>
+            
+        </head>
+        
+    <br>
+
+    <div>
+        <strong><h2 align="Center" style="color: hotpink;">Welcome to Ossy's Vlog</h2></strong>
+    </div>
+
+
+    <form class="form-group" method="POST" action="#">
+        <h3 align="Center" style="color: hotpink;">Register Here</h3>
+        <div>
+            <label class="label">Full name:</label>
+            <input class="form-control" type="text" name="fullname" required>
+        </div> &nbsp;
+                    
+        <div>
+            <label class="label">Home address:</label>
+            <input class="form-control" type="text" name="Homeaddress">
+        </div>
+        &nbsp;
+        
+        <div>
+            <label class="label">Phone number:</label>
+            <input class="form-control" type="number" name="Phonenumber">
+        </div>
+        <br>
+        <div>
+            <label class="label">email address:</label>
+            <input class="form-control" type="email" name="email">
+        </div>
+        <br>
+
+        <div>
+            <label class="label">Password:</label>
+            <input class="form-control" type="password" name="password">
+        </div>
+        <br>
+        <div>
+            <button  class="btn btn-primary form-control" type="submit">Submit</button>
+        </div>
+            
+        
+
+    </form>
+</body>
+</html>
